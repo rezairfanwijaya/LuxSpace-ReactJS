@@ -3,6 +3,9 @@ import React from 'react';
 import Header from './components/header.js';
 // import hero
 import Hero from './components/hero.js';
+// import browse
+import Browse from './components/browse.js'
+
 import './tailwind/style.css';
 
 function App() {
@@ -10,6 +13,8 @@ function App() {
     <>
     <Header/>
     <Hero/>
+    <Browse/>
+    
     </>
   );
 }
