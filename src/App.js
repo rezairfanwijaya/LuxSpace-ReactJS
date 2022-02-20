@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Header from './components/header.js';
 import './tailwind/style.css';
 
 function App() {
   return (
-    <div className='text-blue-800 text-center'>
-      Nama saya reza
-    </div>
+    <>
+    <Header/>
+    </>
   );
 }
 
