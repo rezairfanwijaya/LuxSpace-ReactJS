@@ -7,6 +7,8 @@ import Hero from './components/hero.js';
 import Browse from './components/browse.js';
 // import justArrived
 import Justarrived from './components/justArrived.js';
+// import clients
+import Client from './components/clients.js';
 
 import './tailwind/style.css';
 
@@ -17,6 +19,7 @@ function App() {
     <Hero/>
     <Browse/>
     <Justarrived/>
+    <Client/>
     
     </>
   );

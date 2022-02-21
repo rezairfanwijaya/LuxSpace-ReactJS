@@ -589,6 +589,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: -1rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -665,6 +670,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex: none;
 }
 
+.flex-auto{
+  flex: 1 1 auto;
+}
+
 .grid-cols-9{
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
@@ -679,6 +688,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -1155,6 +1168,11 @@ button[disabled]:hover{
     grid-row: span 2 / span 2;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1169,6 +1187,14 @@ button[disabled]:hover{
 
   .md\:w-88{
     width: 22rem;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:flex-initial{
+    flex: 0 1 auto;
   }
 
   .md\:flex-row{
@@ -1195,6 +1221,11 @@ button[disabled]:hover{
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:pl-72{
