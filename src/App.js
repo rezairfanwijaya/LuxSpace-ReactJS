@@ -9,6 +9,8 @@ import Browse from './components/browse.js';
 import Justarrived from './components/justArrived.js';
 // import clients
 import Client from './components/clients.js';
+// import aside menu
+import Aside from './components/asideMenu.js';
 
 import './tailwind/style.css';
 
@@ -20,6 +22,7 @@ function App() {
     <Browse/>
     <Justarrived/>
     <Client/>
+    <Aside/>
     
     </>
   );
