@@ -11,6 +11,8 @@ import Justarrived from './components/justArrived.js';
 import Client from './components/clients.js';
 // import aside menu
 import Aside from './components/asideMenu.js';
+// import footer
+import Footer from './components/footer.js';
 
 import './tailwind/style.css';
 
@@ -23,6 +25,7 @@ function App() {
     <Justarrived/>
     <Client/>
     <Aside/>
+    <Footer/>
     
     </>
   );
