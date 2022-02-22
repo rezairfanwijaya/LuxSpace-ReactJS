@@ -9,9 +9,9 @@ function modal({ handleShowModal }) {
                             title="video"
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/3h0_v1cdUIA"
+                            src="https://www.youtube.com/watch?v=R9pTTFLxIkc"
                             frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; clipboard-write;    encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         ></iframe>
                     </div>
