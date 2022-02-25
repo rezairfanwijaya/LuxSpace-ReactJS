@@ -11,7 +11,7 @@ import { clientsClaim } from 'workbox-core';
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
-import { StaleWhileRevalidate } from 'workbox-strategies';
+import { NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 
 clientsClaim();
 
@@ -50,7 +50,7 @@ registerRoute(
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  // customisasi agar cache bisa menampung banyak file extention
+  // customisasi agar cache bisa menampung banyak file extention untuk gambar
   ({ url }) => url.origin === self.location.origin && /\.(jpe?g|png|svg|ico)$/i.test(url.pathname), // Customize this strategy as needed, e.g., by changing to CacheFirst.
   new StaleWhileRevalidate({
     cacheName: 'images',
@@ -62,6 +62,31 @@ registerRoute(
   })
 );
 
+
+// membuat route baru untuk menyimpan font kedalam cache
+// buat registerRoute (({url}) => url.origin == 'masukan url font anda', pilih metode cache nya dengan car new methodnya apa ({
+  // masukan nama cache yang diinginkan
+  // cacheName : 'fontsaya'
+  // tambah plugin , ini sama kaya session yg berfungsi berapa lama cache akan di simpan
+  // plugins : [
+        // new ExpirationPlugin ({
+            // maxAgeSeconds : 60*60*24*356, untuk setahub
+            // maxEntries : 30
+        // })
+  // ]
+// }))
+
+// untuk penjelasan lebih lengkap ttg method apa aja yang bisa dipakai untuk melakukan caching bisa lihat di https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-strategies
+
+registerRoute(({ url }) => url.origin === 'https://fonts.googleapis.com' || url.origin === 'https://fonts.gstatic.com', new NetworkFirst({
+  cacheName: 'fonts',
+  plugins: [
+    new ExpirationPlugin({
+      maxAgeSeconds : 60 * 60 * 24 * 356,
+      maxEntries : 30
+    })
+  ]
+}))
 
 // This allows the web app to trigger skipWaiting via
 // registration.waiting.postMessage({type: 'SKIP_WAITING'})
