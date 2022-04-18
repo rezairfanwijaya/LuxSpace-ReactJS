@@ -594,6 +594,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -612,10 +616,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-6{
   margin-left: 1.5rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .block{
@@ -638,20 +638,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-0{
-  height: 0px;
-}
-
 .h-full{
   height: 100%;
 }
 
-.h-8{
-  height: 2rem;
-}
-
 .h-16{
   height: 4rem;
+}
+
+.h-0{
+  height: 0px;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .min-h-screen{
@@ -660,6 +660,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full{
   width: 100%;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .w-7{
@@ -676,10 +680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-8{
   width: 2rem;
-}
-
-.w-16{
-  width: 4rem;
 }
 
 .w-screen{
@@ -738,6 +738,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: hidden;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -759,6 +763,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
@@ -767,16 +781,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-pink-400{
   --tw-bg-opacity: 1;
   background-color: rgb(249 202 218 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-35{
@@ -803,14 +807,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0px;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-1{
